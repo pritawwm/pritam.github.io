@@ -1,127 +1,72 @@
-/* Reset some default styles */
+/* General Reset */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Body with background image */
 body {
-    font-family: 'Segoe UI', sans-serif;
-    line-height: 1.6;
-    background-color: #f9fafc;
-    color: #333;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-image: url('https://images.unsplash.com/photo-1603808033194-587bb8f3c34e'); /* Example Immunology Image */
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
 
-/* NAVIGATION BAR */
-nav {
-    background-color: #2e7d32;
-    padding: 1rem 0;
+/* Navigation */
+header {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  list-style: none;
 }
 
 nav ul li {
-    margin: 0 1rem;
+  margin: 0 15px;
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* HEADER */
-header {
-    background-color: #4caf50;
-    color: white;
-    padding: 2rem 1rem;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-}
-
-header p {
-    font-size: 1.2rem;
-}
-
-/* MAIN SECTION */
-main {
-    max-width: 900px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-}
-
+/* Section Styles */
 section {
-    margin-bottom: 2rem;
+  padding: 60px 20px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
 }
 
-h2, h3 {
-    color: #2e7d32;
-    margin-bottom: 1rem;
+#home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* TIMELINE STYLE FOR ACADEMIC PAGE */
-.timeline {
-    border-left: 3px solid #4caf50;
-    margin-left: 1rem;
-    padding-left: 1rem;
-    position: relative;
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 10px;
 }
 
-.timeline-item {
-    margin-bottom: 2rem;
-    position: relative;
+h1, h2 {
+  margin-bottom: 20px;
 }
 
-.timeline-item::before {
-    content: "";
-    position: absolute;
-    left: -10px;
-    top: 0;
-    width: 15px;
-    height: 15px;
-    background-color: #4caf50;
-    border-radius: 50%;
-}
-
-/* FOOTER */
+/* Footer */
 footer {
-    background-color: #e0e0e0;
-    text-align: center;
-    padding: 1rem;
-    font-size: 0.9rem;
-}
-
-/* LINKS */
-a {
-    color: #2e7d32;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* RESPONSIVE */
-@media (max-width: 600px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul li {
-        margin: 0.5rem 0;
-    }
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
 }
